@@ -1,7 +1,7 @@
 
 var install = require('./lib/install.js');
 var uninstall = require('./lib/uninstall.js');
-var exec = require('./lib/exec.js');
+//var exec = require('./lib/exec.js');
 
 
 module.exports = function(sails) {
@@ -9,6 +9,7 @@ module.exports = function(sails) {
    
     
     return {
-        exec: exec
+     install: install,
+		uninstall: uninstall
     };
 };
